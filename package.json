@@ -4,6 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "sandbox": "npx amplify sandbox",
+    "start-all": "concurrently \"npm run sandbox\" \"npm run start\"",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -34,6 +36,7 @@
     "@types/jasmine": "~5.1.0",
     "aws-cdk": "^2.137.0",
     "aws-cdk-lib": "^2.137.0",
+    "concurrently": "^9.0.1",
     "constructs": "^10.3.0",
     "esbuild": "^0.20.2",
     "jasmine-core": "~5.1.0",
